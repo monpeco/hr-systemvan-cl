@@ -1,0 +1,161 @@
+<%= form_for(@candidato) do |f| %>
+  <% if @candidato.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@candidato.errors.count, "error") %> prohibited this candidato from being saved:</h2>
+
+      <ul>
+      <% @candidato.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :rut %><br>
+    <%= f.text_field :rut %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono_movil %><br>
+    <%= f.text_field :telefono_movil %>
+  </div>
+  <div class="field">
+    <%= f.label :tetefono_fijo %><br>
+    <%= f.text_field :tetefono_fijo %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion %><br>
+    <%= f.text_field :direccion %>
+  </div>
+  <div class="field">
+    <%= f.label :ciudad_pais_nacimiento %><br>
+    <%= f.text_field :ciudad_pais_nacimiento %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_nacimiento %><br>
+    <%= f.date_select :fecha_nacimiento %>
+  </div>
+  <div class="field">
+    <%= f.label :otro_contacto %><br>
+    <%= f.text_field :otro_contacto %>
+  </div>
+  <div class="field">
+    <%= f.label :situacion_laboral %><br>
+    <%= f.text_field :situacion_laboral %>
+  </div>
+  <div class="field">
+    <%= f.label :anos_experiencia %><br>
+    <%= f.text_field :anos_experiencia %>
+  </div>
+  <div class="field">
+    <%= f.label :expectativa_renta %><br>
+    <%= f.text_field :expectativa_renta %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo_contrato %><br>
+    <%= f.text_field :tipo_contrato %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_disponibilidad %><br>
+    <%= f.text_field :fecha_disponibilidad %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo_asignacion %><br>
+    <%= f.text_field :tipo_asignacion %>
+  </div>
+  <div class="field">
+    <%= f.label :asignado_empresa %><br>
+    <%= f.text_field :asignado_empresa %>
+  </div>
+  <div class="field">
+    <%= f.label :renta %><br>
+    <%= f.text_field :renta %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_inicio_asignacion %><br>
+    <%= f.date_select :fecha_inicio_asignacion %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_fin_asignacion %><br>
+    <%= f.date_select :fecha_fin_asignacion %>
+  </div>
+  <div class="field">
+    <%= f.label :persona_contacto %><br>
+    <%= f.text_field :persona_contacto %>
+  </div>
+  <div class="field">
+    <%= f.label :comentario %><br>
+    <%= f.text_field :comentario %>
+  </div>
+  <div class="field">
+    <%= f.label :empresa %><br>
+    <%= f.text_field :empresa %>
+  </div>
+  <div class="field">
+    <%= f.label :cargo %><br>
+    <%= f.text_field :cargo %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_inicio_experiencia %><br>
+    <%= f.date_select :fecha_inicio_experiencia %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_fin_experiencia %><br>
+    <%= f.date_select :fecha_fin_experiencia %>
+  </div>
+  <div class="field">
+    <%= f.label :ciudad_pais_empresa %><br>
+    <%= f.text_field :ciudad_pais_empresa %>
+  </div>
+  <div class="field">
+    <%= f.label :descripcion %><br>
+    <%= f.text_field :descripcion %>
+  </div>
+  <div class="field">
+    <%= f.label :titulo %><br>
+    <%= f.text_field :titulo %>
+  </div>
+  <div class="field">
+    <%= f.label :universidad %><br>
+    <%= f.text_field :universidad %>
+  </div>
+  <div class="field">
+    <%= f.label :ciudad_pais_universidad %><br>
+    <%= f.text_field :ciudad_pais_universidad %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_grado %><br>
+    <%= f.date_select :fecha_grado %>
+  </div>
+  <div class="field">
+    <%= f.label :certificaciones %><br>
+    <%= f.text_field :certificaciones %>
+  </div>
+  <div class="field">
+    <%= f.label :competencias %><br>
+    <%= f.text_field :competencias %>
+  </div>
+  <div class="field">
+    <%= f.label :idiomas %><br>
+    <%= f.text_field :idiomas %>
+  </div>
+  <div class="field">
+    <%= f.label :intereses %><br>
+    <%= f.text_field :intereses %>
+  </div>
+  <div class="field">
+    <%= f.label :referencias %><br>
+    <%= f.text_field :referencias %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
