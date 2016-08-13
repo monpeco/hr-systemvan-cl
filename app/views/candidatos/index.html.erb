@@ -1,97 +1,105 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
 
-<h1>Listing Candidatos</h1>
+	<div class="row">
 
-<table>
-  <thead>
-    <tr>
-      <th>Nombre</th>
-      <th>Rut</th>
-      <th>Email</th>
-      <th>Telefono movil</th>
-      <th>Tetefono fijo</th>
-      <th>Direccion</th>
-      <th>Ciudad pais nacimiento</th>
-      <th>Fecha nacimiento</th>
-      <th>Otro contacto</th>
-      <th>Situacion laboral</th>
-      <th>Anos experiencia</th>
-      <th>Expectativa renta</th>
-      <th>Tipo contrato</th>
-      <th>Fecha disponibilidad</th>
-      <th>Tipo asignacion</th>
-      <th>Asignado empresa</th>
-      <th>Renta</th>
-      <th>Fecha inicio asignacion</th>
-      <th>Fecha fin asignacion</th>
-      <th>Persona contacto</th>
-      <th>Comentario</th>
-      <th>Empresa</th>
-      <th>Cargo</th>
-      <th>Fecha inicio experiencia</th>
-      <th>Fecha fin experiencia</th>
-      <th>Ciudad pais empresa</th>
-      <th>Descripcion</th>
-      <th>Titulo</th>
-      <th>Universidad</th>
-      <th>Ciudad pais universidad</th>
-      <th>Fecha grado</th>
-      <th>Certificaciones</th>
-      <th>Competencias</th>
-      <th>Idiomas</th>
-      <th>Intereses</th>
-      <th>Referencias</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <div class="col-md-3">
+          
+          <p class="lead">Listado de Candidatos</p>
 
-  <tbody>
-    <% @candidatos.each do |candidato| %>
-      <tr>
-        <td><%= candidato.nombre %></td>
-        <td><%= candidato.rut %></td>
-        <td><%= candidato.email %></td>
-        <td><%= candidato.telefono_movil %></td>
-        <td><%= candidato.tetefono_fijo %></td>
-        <td><%= candidato.direccion %></td>
-        <td><%= candidato.ciudad_pais_nacimiento %></td>
-        <td><%= candidato.fecha_nacimiento %></td>
-        <td><%= candidato.otro_contacto %></td>
-        <td><%= candidato.situacion_laboral %></td>
-        <td><%= candidato.anos_experiencia %></td>
-        <td><%= candidato.expectativa_renta %></td>
-        <td><%= candidato.tipo_contrato %></td>
-        <td><%= candidato.fecha_disponibilidad %></td>
-        <td><%= candidato.tipo_asignacion %></td>
-        <td><%= candidato.asignado_empresa %></td>
-        <td><%= candidato.renta %></td>
-        <td><%= candidato.fecha_inicio_asignacion %></td>
-        <td><%= candidato.fecha_fin_asignacion %></td>
-        <td><%= candidato.persona_contacto %></td>
-        <td><%= candidato.comentario %></td>
-        <td><%= candidato.empresa %></td>
-        <td><%= candidato.cargo %></td>
-        <td><%= candidato.fecha_inicio_experiencia %></td>
-        <td><%= candidato.fecha_fin_experiencia %></td>
-        <td><%= candidato.ciudad_pais_empresa %></td>
-        <td><%= candidato.descripcion %></td>
-        <td><%= candidato.titulo %></td>
-        <td><%= candidato.universidad %></td>
-        <td><%= candidato.ciudad_pais_universidad %></td>
-        <td><%= candidato.fecha_grado %></td>
-        <td><%= candidato.certificaciones %></td>
-        <td><%= candidato.competencias %></td>
-        <td><%= candidato.idiomas %></td>
-        <td><%= candidato.intereses %></td>
-        <td><%= candidato.referencias %></td>
-        <td><%= link_to 'Show', candidato %></td>
-        <td><%= link_to 'Edit', edit_candidato_path(candidato) %></td>
-        <td><%= link_to 'Destroy', candidato, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre</th>
+        <!--    <th>Rut</th>    -->
+                <th>Email</th>
+                <th>Telefono movil</th>
+        <!--    <th>Tetefono fijo</th>
+                <th>Direccion</th>
+                <th>Ciudad pais nacimiento</th>
+                <th>Fecha nacimiento</th>
+                <th>Otro contacto</th>    -->
+                <th>Situacion laboral</th>
+        <!--    <th>Anos experiencia</th>
+                <th>Expectativa renta</th>
+                <th>Tipo contrato</th>
+                <th>Fecha disponibilidad</th>
+                <th>Tipo asignacion</th>
+                <th>Asignado empresa</th>
+                <th>Renta</th>
+                <th>Fecha inicio asignacion</th>
+                <th>Fecha fin asignacion</th>
+                <th>Persona contacto</th>
+                <th>Comentario</th>
+                <th>Empresa</th>
+                <th>Cargo</th>
+                <th>Fecha inicio experiencia</th>
+                <th>Fecha fin experiencia</th>
+                <th>Ciudad pais empresa</th>
+                <th>Descripcion</th>    -->
+                <th>Titulo</th>
+        <!--    <th>Universidad</th>
+                <th>Ciudad pais universidad</th>
+                <th>Fecha grado</th>
+                <th>Certificaciones</th>
+                <th>Competencias</th>
+                <th>Idiomas</th>
+                <th>Intereses</th>
+                <th>Referencias</th>    -->
+                <th colspan="3"></th>
+              </tr>
+            </thead>
+          
+            <tbody>
+              <% @candidatos.each do |candidato| %>
+                <tr>
+                  <td><%= candidato.nombre %></td>
+          <!--    <td><%= candidato.rut %></td>    -->
+                  <td><%= candidato.email %></td>
+                  <td><%= candidato.telefono_movil %></td>
+          <!--    <td><%= candidato.tetefono_fijo %></td>
+                  <td><%= candidato.direccion %></td>
+                  <td><%= candidato.ciudad_pais_nacimiento %></td>
+                  <td><%= candidato.fecha_nacimiento %></td>
+                  <td><%= candidato.otro_contacto %></td>    -->
+                  <td><%= candidato.situacion_laboral %></td>
+          <!--    <td><%= candidato.anos_experiencia %></td>
+                  <td><%= candidato.expectativa_renta %></td>
+                  <td><%= candidato.tipo_contrato %></td>
+                  <td><%= candidato.fecha_disponibilidad %></td>
+                  <td><%= candidato.tipo_asignacion %></td>
+                  <td><%= candidato.asignado_empresa %></td>
+                  <td><%= candidato.renta %></td>
+                  <td><%= candidato.fecha_inicio_asignacion %></td>
+                  <td><%= candidato.fecha_fin_asignacion %></td>
+                  <td><%= candidato.persona_contacto %></td>
+                  <td><%= candidato.comentario %></td>
+                  <td><%= candidato.empresa %></td>
+                  <td><%= candidato.cargo %></td>
+                  <td><%= candidato.fecha_inicio_experiencia %></td>
+                  <td><%= candidato.fecha_fin_experiencia %></td>
+                  <td><%= candidato.ciudad_pais_empresa %></td>
+                  <td><%= candidato.descripcion %></td>    -->
+                  <td><%= candidato.titulo %></td>
+          <!--    <td><%= candidato.universidad %></td>
+                  <td><%= candidato.ciudad_pais_universidad %></td>
+                  <td><%= candidato.fecha_grado %></td>
+                  <td><%= candidato.certificaciones %></td>
+                  <td><%= candidato.competencias %></td>
+                  <td><%= candidato.idiomas %></td>
+                  <td><%= candidato.intereses %></td>
+                  <td><%= candidato.referencias %></td>    -->
+                  <td><%= link_to 'Show', candidato %></td>
+                  <td><%= link_to 'Edit', edit_candidato_path(candidato) %></td>
+                  <td><%= link_to 'Destroy', candidato, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+          
+          <br>
+          
+          <%= link_to 'New Candidato', new_candidato_path %>
+      </div>
+	</div>
 
-<br>
-
-<%= link_to 'New Candidato', new_candidato_path %>
+</div>

@@ -1,3 +1,32 @@
 // Place all the styles related to the Candidatos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+html {
+  box-sizing: border-box;
+}
+
+body{
+   display: -webkit-flex;
+   display: flex;
+       padding-top: 65px; 
+
+}
+
+
+.lead {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
