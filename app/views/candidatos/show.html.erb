@@ -1,184 +1,196 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
 
-<p>
-  <strong>Nombre:</strong>
-  <%= @candidato.nombre %>
-</p>
+	<div class="row">
 
-<p>
-  <strong>Rut:</strong>
-  <%= @candidato.rut %>
-</p>
+    <div class="col-md-3">
+          
+        <p class="lead">Candidato</p>
+        
+        <p id="notice"><%= notice %></p>
+        
+        <p>
+          <strong>Nombre:</strong>
+          <%= @candidato.nombre %>
+        </p>
+        
+        <p>
+          <strong>Rut:</strong>
+          <%= @candidato.rut %>
+        </p>
+        
+        <p>
+          <strong>Email:</strong>
+          <%= @candidato.email %>
+        </p>
+        
+        <p>
+          <strong>Telefono movil:</strong>
+          <%= @candidato.telefono_movil %>
+        </p>
+        
+        <p>
+          <strong>Tetefono fijo:</strong>
+          <%= @candidato.tetefono_fijo %>
+        </p>
+        
+        <p>
+          <strong>Direccion:</strong>
+          <%= @candidato.direccion %>
+        </p>
+        
+        <p>
+          <strong>Ciudad pais nacimiento:</strong>
+          <%= @candidato.ciudad_pais_nacimiento %>
+        </p>
+        
+        <p>
+          <strong>Fecha nacimiento:</strong>
+          <%= @candidato.fecha_nacimiento %>
+        </p>
+        
+        <p>
+          <strong>Otro contacto:</strong>
+          <%= @candidato.otro_contacto %>
+        </p>
+        
+        <p>
+          <strong>Situacion laboral:</strong>
+          <%= @candidato.situacion_laboral %>
+        </p>
+        
+        <p>
+          <strong>Anos experiencia:</strong>
+          <%= @candidato.anos_experiencia %>
+        </p>
+        
+        <p>
+          <strong>Expectativa renta:</strong>
+          <%= @candidato.expectativa_renta %>
+        </p>
+        
+        <p>
+          <strong>Tipo contrato:</strong>
+          <%= @candidato.tipo_contrato %>
+        </p>
+        
+        <p>
+          <strong>Fecha disponibilidad:</strong>
+          <%= @candidato.fecha_disponibilidad %>
+        </p>
+        
+        <p>
+          <strong>Tipo asignacion:</strong>
+          <%= @candidato.tipo_asignacion %>
+        </p>
+        
+        <p>
+          <strong>Asignado empresa:</strong>
+          <%= @candidato.asignado_empresa %>
+        </p>
+        
+        <p>
+          <strong>Renta:</strong>
+          <%= @candidato.renta %>
+        </p>
+        
+        <p>
+          <strong>Fecha inicio asignacion:</strong>
+          <%= @candidato.fecha_inicio_asignacion %>
+        </p>
+        
+        <p>
+          <strong>Fecha fin asignacion:</strong>
+          <%= @candidato.fecha_fin_asignacion %>
+        </p>
+        
+        <p>
+          <strong>Persona contacto:</strong>
+          <%= @candidato.persona_contacto %>
+        </p>
+        
+        <p>
+          <strong>Comentario:</strong>
+          <%= @candidato.comentario %>
+        </p>
+        
+        <p>
+          <strong>Empresa:</strong>
+          <%= @candidato.empresa %>
+        </p>
+        
+        <p>
+          <strong>Cargo:</strong>
+          <%= @candidato.cargo %>
+        </p>
+        
+        <p>
+          <strong>Fecha inicio experiencia:</strong>
+          <%= @candidato.fecha_inicio_experiencia %>
+        </p>
+        
+        <p>
+          <strong>Fecha fin experiencia:</strong>
+          <%= @candidato.fecha_fin_experiencia %>
+        </p>
+        
+        <p>
+          <strong>Ciudad pais empresa:</strong>
+          <%= @candidato.ciudad_pais_empresa %>
+        </p>
+        
+        <p>
+          <strong>Descripcion:</strong>
+          <%= @candidato.descripcion %>
+        </p>
+        
+        <p>
+          <strong>Titulo:</strong>
+          <%= @candidato.titulo %>
+        </p>
+        
+        <p>
+          <strong>Universidad:</strong>
+          <%= @candidato.universidad %>
+        </p>
+        
+        <p>
+          <strong>Ciudad pais universidad:</strong>
+          <%= @candidato.ciudad_pais_universidad %>
+        </p>
+        
+        <p>
+          <strong>Fecha grado:</strong>
+          <%= @candidato.fecha_grado %>
+        </p>
+        
+        <p>
+          <strong>Certificaciones:</strong>
+          <%= @candidato.certificaciones %>
+        </p>
+        
+        <p>
+          <strong>Competencias:</strong>
+          <%= @candidato.competencias %>
+        </p>
+        
+        <p>
+          <strong>Idiomas:</strong>
+          <%= @candidato.idiomas %>
+        </p>
+        
+        <p>
+          <strong>Intereses:</strong>
+          <%= @candidato.intereses %>
+        </p>
+        
+        <p>
+          <strong>Referencias:</strong>
+          <%= @candidato.referencias %>
+        </p>
+        
+        <%= link_to 'Edit', edit_candidato_path(@candidato) %> |
+        <%= link_to 'Back', candidatos_path %>
+      </div>
+	</div>
 
-<p>
-  <strong>Email:</strong>
-  <%= @candidato.email %>
-</p>
-
-<p>
-  <strong>Telefono movil:</strong>
-  <%= @candidato.telefono_movil %>
-</p>
-
-<p>
-  <strong>Tetefono fijo:</strong>
-  <%= @candidato.tetefono_fijo %>
-</p>
-
-<p>
-  <strong>Direccion:</strong>
-  <%= @candidato.direccion %>
-</p>
-
-<p>
-  <strong>Ciudad pais nacimiento:</strong>
-  <%= @candidato.ciudad_pais_nacimiento %>
-</p>
-
-<p>
-  <strong>Fecha nacimiento:</strong>
-  <%= @candidato.fecha_nacimiento %>
-</p>
-
-<p>
-  <strong>Otro contacto:</strong>
-  <%= @candidato.otro_contacto %>
-</p>
-
-<p>
-  <strong>Situacion laboral:</strong>
-  <%= @candidato.situacion_laboral %>
-</p>
-
-<p>
-  <strong>Anos experiencia:</strong>
-  <%= @candidato.anos_experiencia %>
-</p>
-
-<p>
-  <strong>Expectativa renta:</strong>
-  <%= @candidato.expectativa_renta %>
-</p>
-
-<p>
-  <strong>Tipo contrato:</strong>
-  <%= @candidato.tipo_contrato %>
-</p>
-
-<p>
-  <strong>Fecha disponibilidad:</strong>
-  <%= @candidato.fecha_disponibilidad %>
-</p>
-
-<p>
-  <strong>Tipo asignacion:</strong>
-  <%= @candidato.tipo_asignacion %>
-</p>
-
-<p>
-  <strong>Asignado empresa:</strong>
-  <%= @candidato.asignado_empresa %>
-</p>
-
-<p>
-  <strong>Renta:</strong>
-  <%= @candidato.renta %>
-</p>
-
-<p>
-  <strong>Fecha inicio asignacion:</strong>
-  <%= @candidato.fecha_inicio_asignacion %>
-</p>
-
-<p>
-  <strong>Fecha fin asignacion:</strong>
-  <%= @candidato.fecha_fin_asignacion %>
-</p>
-
-<p>
-  <strong>Persona contacto:</strong>
-  <%= @candidato.persona_contacto %>
-</p>
-
-<p>
-  <strong>Comentario:</strong>
-  <%= @candidato.comentario %>
-</p>
-
-<p>
-  <strong>Empresa:</strong>
-  <%= @candidato.empresa %>
-</p>
-
-<p>
-  <strong>Cargo:</strong>
-  <%= @candidato.cargo %>
-</p>
-
-<p>
-  <strong>Fecha inicio experiencia:</strong>
-  <%= @candidato.fecha_inicio_experiencia %>
-</p>
-
-<p>
-  <strong>Fecha fin experiencia:</strong>
-  <%= @candidato.fecha_fin_experiencia %>
-</p>
-
-<p>
-  <strong>Ciudad pais empresa:</strong>
-  <%= @candidato.ciudad_pais_empresa %>
-</p>
-
-<p>
-  <strong>Descripcion:</strong>
-  <%= @candidato.descripcion %>
-</p>
-
-<p>
-  <strong>Titulo:</strong>
-  <%= @candidato.titulo %>
-</p>
-
-<p>
-  <strong>Universidad:</strong>
-  <%= @candidato.universidad %>
-</p>
-
-<p>
-  <strong>Ciudad pais universidad:</strong>
-  <%= @candidato.ciudad_pais_universidad %>
-</p>
-
-<p>
-  <strong>Fecha grado:</strong>
-  <%= @candidato.fecha_grado %>
-</p>
-
-<p>
-  <strong>Certificaciones:</strong>
-  <%= @candidato.certificaciones %>
-</p>
-
-<p>
-  <strong>Competencias:</strong>
-  <%= @candidato.competencias %>
-</p>
-
-<p>
-  <strong>Idiomas:</strong>
-  <%= @candidato.idiomas %>
-</p>
-
-<p>
-  <strong>Intereses:</strong>
-  <%= @candidato.intereses %>
-</p>
-
-<p>
-  <strong>Referencias:</strong>
-  <%= @candidato.referencias %>
-</p>
-
-<%= link_to 'Edit', edit_candidato_path(@candidato) %> |
-<%= link_to 'Back', candidatos_path %>
+</div>

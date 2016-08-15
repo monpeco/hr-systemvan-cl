@@ -6,7 +6,7 @@
           
           <p class="lead">Listado de Candidatos</p>
 
-          <table>
+          <table class="table table-bordered table-striped">
             <thead>
               <tr>
                 <th>Nombre</th>
@@ -88,9 +88,9 @@
                   <td><%= candidato.idiomas %></td>
                   <td><%= candidato.intereses %></td>
                   <td><%= candidato.referencias %></td>    -->
-                  <td><%= link_to 'Show', candidato %></td>
-                  <td><%= link_to 'Edit', edit_candidato_path(candidato) %></td>
-                  <td><%= link_to 'Destroy', candidato, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                  <td><%= link_to 'Ver', candidato %></td>
+                  <td><%= link_to 'Editar', edit_candidato_path(candidato) %></td>
+                  <td><%= link_to 'Borrar', candidato, method: :delete, data: { confirm: 'Are you sure?' } %></td>
                 </tr>
               <% end %>
             </tbody>
@@ -98,7 +98,7 @@
           
           <br>
           
-          <%= link_to 'New Candidato', new_candidato_path %>
+          <%= link_to 'Nuevo Candidato', new_candidato_path %>
       </div>
 	</div>
 
